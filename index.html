@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+ <?php require "logic.php"; ?>
+ <link name= "stylesheet" href="p1style.css"/>
+  <meta charset="UTF-8">
+  <title>xkcd password generator</title>
+  <link name = "wordlist" href = 'word_list.txt'/>
+  
+  
+ </head>
+
+  <form action="logic.php" method="post">
+<h3>How many words in you password?</h3>
+(Up to 9)
+<input type="number" name="request"><br>
+<br>
+<input type="radio" name="character" value="yes" checked>Add a character
+ <br>
+  <input type="radio" name="character" value="no">No Thanks!
+ <br>
+ <br>
+ <input type="radio" name="number" value="yes" checked>Add a couple of numbers!
+  <br>
+  <input type="radio" name="number" value="no">I'll pass on the numbers.<br>
+  <input type="submit" value="Submit">
+  </form>
+  
+<body>
+
+<?php echo count($words);?>
+
+<h2> Your Password is:<h2>
+<?php
+//return the password	
+foreach($key as $item) 
+{
+    echo $item;
+};
+
+ ?>
+<br>
+</body>
+
+</html>
+
