@@ -10,14 +10,15 @@
   
   
  </head>
-
   <form class="form" action="index.php" method="post">
+  <h2> This is an XKCD password generator.</h2>
+<h3>  It will generate a psedo-random password from over 300,000 English words! Just answer the following:<h3>
 <h3>How many words in your password?</h3>
 (Up to 9)<br>
 <p class = >
 <input class="number" type="number" name="request" min= "0" max= "9" placeholder = "#?" required><br>
 </p>
-<input class= "button" type="radio" name="character" value="yes" checked>Add a character
+<input class= "button" type="radio" name="character" value="yes" checked>Add character?
  <br>
   <input class= "button" type="radio" name="character" value="no">No Thanks!
  <br>
