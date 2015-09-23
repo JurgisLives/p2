@@ -38,7 +38,7 @@
 //echo camel-case password
 foreach($key as $item) 
 {
-    echo ucwords($item);
+    echo ucwords($item) . " ";
 }?>
 </h4>
 <br>
