@@ -50,15 +50,8 @@ if ($_POST["number"] == 'yes')
 		array_push($key, $num[$y]);
 	}
 }
-//return the password	
-print "Your Password is:<br><br>";
-
-//echo camel-case password
-foreach($key as $item) 
-{
-    echo ucwords($item);
-};
 }
+
 else
 {
 	print "You may select a number up to 9";
